@@ -1,0 +1,19 @@
+state={
+	id=936
+	name="STATE_936"
+	provinces={
+		7014 10034 11928 12052 12076 
+	}
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			air_base = 5
+		}
+	}
+	manpower=250000
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
