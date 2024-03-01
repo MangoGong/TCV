@@ -1,0 +1,3 @@
+SIC	= "countries/Sichuan.txt"
+NGJ	= "countries/Northwest Garrison of the Empire of Japan.txt"
+SHN	= "Shanxia.txt"
