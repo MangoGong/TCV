@@ -1,0 +1,13 @@
+bitmapfonts = {
+
+ 	bitmapfont = {
+		name = "mapfont"   
+		fontfiles = { 
+			"gfx/fonts/mapfont"
+			"gfx/fonts/mapfont"		
+		}
+		color = 0xffffffff
+	}
+
+
+}
