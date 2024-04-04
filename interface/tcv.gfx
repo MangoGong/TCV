@@ -1,0 +1,32 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "tahoma_60"
+		fontfiles = {
+			"mapfont_00"
+			"mapfont_01"
+			"mapfont_02"
+			"mapfont_03"
+			"mapfont_04"
+			"mapfont_05"
+			"mapfont_06"
+			"mapfont_07"
+			"mapfont_08"
+			"mapfont_09"
+			"mapfont_10"
+			"mapfont_11"
+			"mapfont_12"
+			"mapfont_13"
+			"mapfont_14"
+			"mapfont_15"
+			"mapfont_16"
+			"mapfont_17"
+			"mapfont_18"
+			"mapfont_19"
+			"mapfont_20"
+			"mapfont_21"
+			"mapfont_22"
+			"mapfont_23"
+			"mapfont_24"
+		}
+	}
+}
