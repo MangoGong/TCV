@@ -6,61 +6,61 @@
 #And remember to change the .dds of your radio station thumbnail in the gfx folder!
 
 music = {
-    name = "Boatman's_Song_Of_The_Yellow_River_MMCT"
+    name = "黄河船夫曲"
     file = "Boatman's_Song_Of_The_Yellow_River.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Dance_Of_The_Youth_MMCT"
+    name = "青春舞曲"
     file = "Dance_Of_The_Youth.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Defend_the_Yellow_River_MMCT"
+    name = "保卫黄河"
     file = "Defend_the_Yellow_River.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Let_Us_Paddle_MMCT"
+    name = "让我们荡起双桨"
     file = "Let_Us_Paddle.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Ode_to_the_Yellow_River_MMCT"
+    name = "黄河颂"
     file = "Ode_to_the_Yellow_River.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Prekrasnoe_daleko_MMCT"
+    name = "最美好的前途"
     file = "Prekrasnoe_daleko.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Roar,The_Yellow_River_MMCT"
+    name = "怒吼吧，黄河"
     file = "Roar,The_Yellow_River.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Yellow_River_flows_from_the_sky_MMCT"
+    name = "黄河之水天上来"
     file = "Yellow_River_flows_from_the_sky.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Yellow_River_Lament_MMCT"
+    name = "黄河怨"
     file = "Yellow_River_Lament.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "Yellow_Water_Ballad_MMCT"
+    name = "黄水谣"
     file = "Yellow_Water_Ballad.ogg"
     volume = 0.65
 }
