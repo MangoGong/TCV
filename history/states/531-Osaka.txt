@@ -35,12 +35,7 @@ state = {
 			11960 20 # Kyoto
 		}
 
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 5
-			}
-		}
+		
 
 	}
 

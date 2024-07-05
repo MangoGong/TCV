@@ -19,10 +19,7 @@ state={
 			infrastructure = 1
 		}
 
-		1938.9.30 = {
-			owner = TUR
-			controller = TUR
-		}
+		
 	}
 
 	local_supplies=0.0 
