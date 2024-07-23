@@ -10,7 +10,7 @@ state = {
 			12683 1 
 		}
 
-		owner = SOV
+		owner = FER
 		buildings = {
 			infrastructure = 1
 		}
