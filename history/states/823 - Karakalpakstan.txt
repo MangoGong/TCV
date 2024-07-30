@@ -9,7 +9,7 @@ state = {
 			1614 1
 		}
 		
-		owner = UZB
+		owner = SOV
 		
 		buildings = {
 			infrastructure = 2
