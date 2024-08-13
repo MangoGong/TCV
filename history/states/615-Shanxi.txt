@@ -9,7 +9,7 @@ state=
 	history=
 	{
 		owner = SHN
-		add_core_of = SHX
+		add_core_of = SXI
 		add_core_of = CHI
 		add_core_of = PRC
 		victory_points = {
