@@ -1,0 +1,75 @@
+ideas = {
+
+	country = {
+
+		ITA_Sogno_della_Nuova_Roma = {
+
+			name = ITA_Sogno_della_Nuova_Roma
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = ITA }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = +0.10
+				political_power_cost = +0.80
+				war_support_factor = +0.04
+			}
+		}
+		ITA_viva_Italia = {
+
+			name = ITA_viva_Italia
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = ITA }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = +0.10
+				production_speed_buildings_factor = +0.10
+				research_speed_factor = +0.10
+				industry_repair_factor = +0.10
+				industrial_capacity_dockyard = +0.10
+				local_resources_factor = +0.10
+			}
+		}
+		ITA_Umberto_ii = {
+
+			name = ITA_Umberto_ii
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = ITA }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = +0.05
+				political_power_cost = +0.80
+				training_time_factor = -0.25
+				army_org_regain = +0.05
+			}
+		}
+		ITA_Grande_recessione = {
+
+			name = ITA_Grande_recessione
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = ITA }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.25
+				consumer_goods_factor = +0.15
+			}
+		}
+	}
+}

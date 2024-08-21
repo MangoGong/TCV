@@ -1,0 +1,30 @@
+characters={
+	CPC_mao={
+		name=CPC_mao
+		portraits={
+			army={
+				large="gfx//leaders//CPC//CPC_mao.dds"
+				small=gfx//leaders//CPC//CPC_mao.dds
+			}
+			civilian={
+				large="gfx//leaders//CPC//CPC_mao.dds"
+				small=gfx//leaders//CPC//CPC_mao.dds
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

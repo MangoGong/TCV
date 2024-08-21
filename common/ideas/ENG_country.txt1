@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+
+		JAP_Rising_Sun = {
+
+			name = JAP_Rising_Sun
+
+			picture = prc_the_long_march
+
+			allowed = { original_tag = JAP }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = +0.80
+				political_power_gain = +0.10	
+			}
+		}
+		JAP_split_army_favor_navy = {
+
+			name = JAP_split_army_favor_navy
+
+			picture = prc_the_long_march
+
+			allowed = { original_tag = JAP }
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		JAP_lord_GEA = {
+
+			name = JAP_lord_GEA
+
+			picture = prc_the_long_march
+
+			allowed = { original_tag = JAP }
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		JAP_risks_of_consortium = {
+
+			name = JAP_risks_of_consortium
+
+			picture = prc_the_long_march
+
+			allowed = { original_tag = JAP }
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

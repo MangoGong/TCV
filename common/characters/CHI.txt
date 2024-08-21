@@ -1,0 +1,16 @@
+characters={
+	CHI_Zhou_Fohai={
+		name=CHI_Zhou_Fohai
+		portraits={
+			civilian={
+				large="gfx//leaders//CHI//CHI_Zhou_Fohai.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

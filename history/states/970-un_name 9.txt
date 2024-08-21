@@ -1,0 +1,32 @@
+state={
+	id=970
+	name="STATE_970"
+	provinces={
+		957 3977 11879 
+	}
+	manpower=150000
+	state_category = town
+
+	history={
+		owner = JAP
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			air_base = 2
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = SOV
+		add_core_of = JAP
+		add_core_of = FER
+		add_core_of = VLA
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

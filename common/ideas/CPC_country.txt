@@ -1,0 +1,71 @@
+ideas = {
+
+	country = {
+
+		CPC_troop_verge_collapse = {
+
+			name = CPC_troop_verge_collapse
+
+			picture = TCV_testingicon_ideas
+			allowed = { original_tag = CPC }
+
+			removal_cost = -1
+
+			modifier = {
+				offence	 = -0.10
+				defence  = -0.10
+			}
+		}
+
+		CPC_shaky_economy = {
+
+			name = CPC_shaky_economy
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = CPC }
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.10
+				stability_factor = -0.10
+				state_resources_factor = -0.30
+				industrial_capacity_factory = -0.20
+				production_factory_max_efficiency_factor = -0.20
+			}
+		}
+
+		CPC_confused_target = {
+
+			name = CPC_confused_target
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = CPC }
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor	= -0.15
+				stability_factor = -0.10
+			}
+		}
+
+		CPC_faith_left = {
+
+			name = CPC_faith_left
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = CPC }
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = +0.05
+				weekly_manpower	= +10
+			}
+		}
+	}
+}

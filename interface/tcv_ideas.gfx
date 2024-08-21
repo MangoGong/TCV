@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	### AFG
+
+	spriteType = {
+		name = "GFX_idea_TCV_testingicon_ideas"
+		texturefile = "gfx/interface/ideas/TCV_testingicon_ideas.dds"
+	}
+}

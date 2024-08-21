@@ -1,0 +1,27 @@
+state={
+	id=971
+	name="STATE_971"
+	provinces={
+		11913
+	}
+	manpower=173051
+	state_category = large_city
+
+	history={
+		owner = CHI
+		victory_points = {
+			11913 30
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 4
+			11913 = {
+			}
+		}
+		add_core_of = CHI
+		add_core_of = CPC
+	}
+
+	local_supplies=0.000
+}

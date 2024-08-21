@@ -1,0 +1,16 @@
+characters={
+	RGG_Shina_etsusaburo={
+		name=RGG_Shina_etsusaburo
+		portraits={
+			civilian={
+				large="gfx//leaders//RGG//RGG_Shina_etsusaburo.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
