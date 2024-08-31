@@ -11,9 +11,9 @@
 
 #Consult the music modding page on the HOI4 wiki for more info: https://hoi4.paradoxwikis.com/Music_modding.
 
-music_station = "panasianrevolutionaryradio_MMCT"
+music_station = "panasianrevolutionaryradio_"
 music = {
-    song = "Boatman's_Song_Of_The_Yellow_River_MMCT"
+    song = "Boatman's_Song_Of_The_Yellow_River"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -21,7 +21,7 @@ music = {
 }
 
 music = {
-    song = "Dance_Of_The_Youth_MMCT"
+    song = "Dance_Of_The_Youth"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -29,7 +29,7 @@ music = {
 }
 
 music = {
-    song = "Defend_the_Yellow_River_MMCT"
+    song = "Defend_the_Yellow_River"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -37,7 +37,7 @@ music = {
 }
 
 music = {
-    song = "Let_Us_Paddle_MMCT"
+    song = "Let_Us_Paddle"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -45,7 +45,7 @@ music = {
 }
 
 music = {
-    song = "Ode_to_the_Yellow_River_MMCT"
+    song = "Ode_to_the_Yellow_River"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -53,7 +53,7 @@ music = {
 }
 
 music = {
-    song = "Prekrasnoe_daleko_MMCT"
+    song = "Prekrasnoe_daleko"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -61,7 +61,7 @@ music = {
 }
 
 music = {
-    song = "Roar,The_Yellow_River_MMCT"
+    song = "Roar,The_Yellow_River"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -69,7 +69,7 @@ music = {
 }
 
 music = {
-    song = "Yellow_River_flows_from_the_sky_MMCT"
+    song = "Yellow_River_flows_from_the_sky"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -77,7 +77,7 @@ music = {
 }
 
 music = {
-    song = "Yellow_River_Lament_MMCT"
+    song = "Yellow_River_Lament"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -85,7 +85,7 @@ music = {
 }
 
 music = {
-    song = "Yellow_Water_Ballad_MMCT"
+    song = "Yellow_Water_Ballad"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
