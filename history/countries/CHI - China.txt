@@ -6,15 +6,6 @@ recruit_character = CHI_Zhou_Fohai
 
 set_stability = 0.2
 set_war_support = 0.5
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	mass_assault = 1
-	fleet_in_being = 1
-	basic_train = 1
-}
 
 add_ideas = {
 	tinancial_tsunami
@@ -36,3 +27,64 @@ set_popularities = {
 }
 
 add_opinion_modifier = { target = PRC modifier = hostile_status }
+
+set_autonomy = {
+	target = FUJ
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = GUZ
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = HEB
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = HEN
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = ZEJ
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = HUB
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = SIC
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = JSU
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = JXI
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = SHD
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = HNA
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = ANH
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = SNX
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = QHA
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = NXG
+	autonomous_state = autonomy_integrated_puppet
+}

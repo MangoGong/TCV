@@ -4,10 +4,9 @@ state = {
 
 	history = {
 
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = CPC
-
+		owner = QHA
+		add_core_of = QHA
+		
 		#victory_points = {
 		#	7940 10 # Goldmud was not ofunded until in the late fifties
 		#}
@@ -17,27 +16,10 @@ state = {
 			industrial_complex = 2
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
 	}
 
 	provinces = {
-		4914 4964 7940 8018 8037 12899 
+		4914 4964 7940 8018 8037 12899 10865 1882 12890 10834 12846 7997 
 	}
 	manpower=  1196100
 	buildings_max_level_factor = 1.000

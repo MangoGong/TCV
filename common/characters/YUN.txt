@@ -1,0 +1,15 @@
+characters={
+	YUN_Zhu_Kezhen={
+		name=YUN_Zhu_Kezhen
+		portraits={
+			civilian={
+				large="GFX_portrait_yun_long_yun"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

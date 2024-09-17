@@ -4,7 +4,6 @@ state={
 
 	history={
 		owner = CPC
-		add_core_of = CHI
 		add_core_of = CPC
 		buildings = {
 			infrastructure = 2

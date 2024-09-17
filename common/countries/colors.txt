@@ -250,8 +250,8 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
-	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 USA = {
 	color = rgb { 20 133 237 }
@@ -319,8 +319,8 @@ GXC = {
 }
 
 SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 XSM = {
@@ -932,4 +932,63 @@ QUE = {
 	color = rgb { 0 102 255 }
 	color_ui = rgb { 0 31 77 }
 }
-
+ANH = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+FUJ = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+GUZ = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+HEB = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+HEN = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+JSU = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+JXI = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+SHD = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+HUB = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+SNX = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+SIC = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+HNA = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+ZEJ = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+QHA = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+NXG = {
+	color = rgb { 89  115  180 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}

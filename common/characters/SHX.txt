@@ -1,0 +1,19 @@
+characters={
+	SHX_Wang_Jingguo={
+		name=SHX_Wang_Jingguo
+		portraits={
+			civilian={
+				large="GFX_portrait_yan_xishan"
+			}
+			army={
+				small=GFX_portrait_SHX_yan_xishan_small
+				large="GFX_portrait_yan_xishan"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+
+graphical_culture = asian_gfx
+#如graphical_culture = middle_eastern_gfx
+#中东middle_eastern_gfx
+#东欧eastern_european_gfx
+#西欧western_european_gfx
+#亚洲asian_gfx
+#非洲african_gfx
+#南美洲和中美洲southamerican_gfx
+graphical_culture_2d = asian_2d
+#如graphical_culture = middle_eastern_2d
+#中东middle_eastern_2d  
+#东欧eastern_european_2d
+#西欧western_european_2d
+#亚洲asian_2d
+#非洲african_2d
+#南美洲和中美洲southamerican_2d
+
+color = { 255  244  190 }
+#这个不是国家地块颜色，作者也不知道这里的color是做什么用，建议使用和国家地块颜色相同的RGB代码{国家地块颜色在common\countries\colors.txt改}

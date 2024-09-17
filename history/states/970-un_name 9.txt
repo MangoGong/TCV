@@ -21,10 +21,7 @@ state={
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = SOV
 		add_core_of = JAP
-		add_core_of = FER
-		add_core_of = VLA
 	}
 
 	buildings_max_level_factor=1.000
