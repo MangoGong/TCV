@@ -1,90 +1,41 @@
-﻿capital = 774
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-# Starting tech
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
+
 set_technology = {
 	infantry_weapons = 1
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-set_convoys = 0
-
-recruit_character = CHA_acas
-recruit_character = CHA_communist_guy
-recruit_character = CHA_ncs
-recruit_character = CHA_awt
-recruit_character = CHA_pot
-recruit_character = CHA_fascist_guy
-recruit_character = CHA_ai2
-recruit_character = CHA_nt
-recruit_character = CHA_aco2
-recruit_character = CHA_ar
-recruit_character = CHA_acr
-recruit_character = CHA_mt
-recruit_character = CHA_stc
-recruit_character = CHA_aa2
-recruit_character = CHA_acgs
-recruit_character = CHA_ncm
-recruit_character = CHA_nccr
-recruit_character = CHA_coi
-recruit_character = CHA_democratic_guy
-recruit_character = CHA_acd2
-
-
-1939.1.1 = {
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
+recruit_character = CHA_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
+}
+set_popularities = {
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+add_ideas = {
+	CHA_test_idea
 }
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

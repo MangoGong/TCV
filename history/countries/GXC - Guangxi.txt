@@ -1,83 +1,41 @@
-﻿capital = 594
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-#oob = "GXC_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-set_stability = 0.6
-set_war_support = 0.4
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-recruit_character = GXC_li_zongren
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-	}
-}
-
-1939.1.1 = {
-	
-	oob = "GXC_1939"
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	if = {
-		limit = {
-			has_dlc = "Waking the Tiger"
-		}
-
-		CHI = { add_to_faction = PREV }
-		add_to_war = {
-			targeted_alliance = CHI
-			enemy = JAP
-			hostility_reason = asked_to_join
-		}
-
-		complete_national_focus = CHI_secure_internal_politics
-		complete_national_focus = CHI_cooperation_with_the_nationalists
-		complete_national_focus = CHI_industrial_investment
-		complete_national_focus = CHI_public_education_reform
-		complete_national_focus = CHI_long_term_economic_planning
-		complete_national_focus = CHI_technological_cooperation
-		complete_national_focus = CHI_local_arms_production
-		complete_national_focus = CHI_new_model_province
-		complete_national_focus = CHI_root_out_corruption
-		complete_national_focus = CHI_land_reform
-		complete_national_focus = CHI_reform_the_administration
-		complete_national_focus = CHI_heavy_weapons_development
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-
-}
-
-
-
-set_convoys = 5
+recruit_character = GXC_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
+	communism = 0
+	fascism = 0
+	democratic = 0
 	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
+
+add_ideas = {
+	GXC_test_idea
+}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

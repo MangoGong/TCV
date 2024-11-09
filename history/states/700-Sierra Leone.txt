@@ -10,8 +10,9 @@ state={
 	
 	history=
 	{
-		owner = ENG
+		owner = WAF
 		add_core_of = SIE
+		add_core_of = WAF
 		victory_points = {
 			2038 1 
 		}

@@ -18,16 +18,11 @@ state = {
 		}
 		add_core_of = ITA
 		add_claim_by = ALB
-		1939.4.12 = {
-		    owner = ITA
-		    controller = ITA
-		    remove_claim_by = ITA
-		}
 
 	}
 
 	provinces = {
-		3896 9780 11762
+		3896 9780 11762 9809 9821
 	}
 	manpower = 246933
 	state_category = rural

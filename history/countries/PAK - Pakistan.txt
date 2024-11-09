@@ -1,208 +1,41 @@
-﻿capital = 440
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "PAK_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_trucks = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	
+	mass_assault = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
-	}
-}
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
-set_convoys = 20
-
-recruit_character = PAK_acd2
-recruit_character = PAK_fascist_guy
-recruit_character = PAK_ncs
-recruit_character = PAK_nccr
-recruit_character = PAK_aco2
-recruit_character = PAK_communist_guy
-recruit_character = PAK_ai2
-recruit_character = PAK_ar
-recruit_character = PAK_coi
-recruit_character = PAK_acas
-recruit_character = PAK_acgs
-recruit_character = PAK_aa2
-recruit_character = PAK_democratic_guy
-recruit_character = PAK_acr
-recruit_character = PAK_stc
-recruit_character = PAK_awt
-recruit_character = PAK_pot
-recruit_character = PAK_mt
-recruit_character = PAK_ncm
-recruit_character = PAK_nt
-
-1939.1.1 = {#placeholder same tech as ENG
-	#generic focuses
-
-	add_political_power = 1198
-	add_command_power = 100
-	oob = "PAK_1939"
-	
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-
-	add_ideas = {
-		#laws
-		volunteer_only
-		low_economic_mobilisation
-	}
-
-	
-	set_technology = {
-		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		grand_battle_plan = 1
-
-		trench_warfare = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		subsidiary_carrier_role = 1
-		convoy_sailing = 1
-		convoy_escorts = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-			early_fighter = 1
-			fighter1 = 1
-		}
-	}
-}
+recruit_character = PAK_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1935.11.14"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	democratic = 17
-	fascism = 2
-	communism = 1
-	neutrality = 80
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-
-create_country_leader = {
-	name = "Qazi Muhammad Essa"
-	
-	picture = "GFX_Portrait_RAJ_Political_Leader_Generic_2"
-	expire = "1960.1.1"
-	ideology = centrism
-	traits = {
-		
-	}
+add_ideas = {
+	PAK_test_idea
 }
-
-create_country_leader = {
-	name = "Muhammad Ali Jinnah"
-	
-	picture = "GFX_Portrait_RAJ_Political_Leader_Generic_2"
-	expire = "1960.1.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Haji Mohammad Danesh"
-	
-	picture = "GFX_Portrait_RAJ_Political_Leader_Generic_2"
-	expire = "1960.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_corps_commander = {
-	name = "Muhammad Zia-ul-Haq"
-	gfx = "GFX_Portrait_The_Raj_Army_Generic"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Iftikhar Khan Janjua"
-	gfx = "GFX_Portrait_The_Raj_Army_Generic_2"
-	traits = {  }
-	skill = 3
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Akbar Khan"
-	gfx = "GFX_Portrait_The_Raj_Army_Generic"
-	traits = { trickster }
-	skill = 3
-	
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

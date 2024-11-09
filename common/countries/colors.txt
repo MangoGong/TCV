@@ -304,7 +304,7 @@ RAJ = {
 }
 
 CRO = {
-	color = rgb { 230  70  180 }
+	color = rgb { 8 171 148 }
 	color_ui = rgb { 230 255 122 }
 }
 
@@ -991,4 +991,44 @@ QHA = {
 NXG = {
 	color = rgb { 89  115  180 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
+}
+RUS = {
+	color = rgb { 25  133  57 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+RHI = {
+	color = rgb { 192  192  192 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+TRC = {
+	color = rgb { 225  123  29 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+BEA = {
+	color = rgb { 255  126  129 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+WAF = {
+	color = rgb { 255  126  255 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+NRZ = {
+	color = rgb { 63  126  255 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+LEV = {
+	color = rgb { 130  251  133 } 
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+FEA = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+FWA = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+KZR = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
 }

@@ -1,0 +1,16 @@
+characters={
+	JAP_jun_ashida={
+		name=JAP_jun_ashida
+		portraits={
+			civilian={
+				large=gfx//leaders//JAP//JAP_jun_ashida.dds
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ warrior_code emperor_showa imperial_sanction }
+			expire="1989.1.1.1"
+			id=700
+		}
+	}
+}

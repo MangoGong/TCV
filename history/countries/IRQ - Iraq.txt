@@ -1,144 +1,41 @@
-﻿capital = 291
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "IRQ_1936"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "IRQ_1936_air_bba"
-	else = {
-		set_air_oob = "IRQ_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
-}
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_mountaineers = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	fuel_silos = 1
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
-
-set_convoys = 5
-
-recruit_character = IRQ_ghazi_i
-recruit_character = IRQ_rashid_ali_algaylani
-recruit_character = IRQ_yusuf_salman_yusuf
-recruit_character = IRQ_abd_almalik_ibn_hisham
-recruit_character = IRQ_taha_al_ahmani
-recruit_character = IRQ_fahmi_said
-recruit_character = IRQ_ali_mahmud_al_shaykh
-recruit_character = IRQ_iskandar_al-shami
-recruit_character = IRQ_abdullah_al-tell
-recruit_character = IRQ_mustafa_al_quidsi
-recruit_character = IRQ_hamdi_al_pachachi
-recruit_character = IRQ_fawsi_al_kaukji
-recruit_character = IRQ_khaled_al_dalabeeh
-recruit_character = IRQ_jamil_al_midfai
-recruit_character = IRQ_ali_ben_jawad
-recruit_character = IRQ_bakr_sidqi
-recruit_character = IRQ_abdullah
-recruit_character = IRQ_amir_al_illah
-recruit_character = IRQ_ali_abn_hussein
-recruit_character = IRQ_nuri_as_said
-
-
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "IRQ_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "IRQ_1939_air_bba"
-		else = {
-			set_air_oob = "IRQ_1939_air_legacy"
-		}
-	}
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
+recruit_character = IRQ_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	fascism = 20
-	neutrality = 80
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		fascism = 30
-		neutrality = 70
-	}
-
-	recruit_character = IRQ_faisal_ii
-	promote_character = IRQ_faisal_ii
-	retire_character = IRQ_ghazi_i
+add_ideas = {
+	IRQ_test_idea
 }
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

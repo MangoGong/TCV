@@ -1,102 +1,41 @@
-﻿capital = 298
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "LIB_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-set_convoys = 10
-
-recruit_character = LIB_edgar_cailloux
-recruit_character = LIB_andre_fields
-recruit_character = LIB_james_brooks
-recruit_character = LIB_won_loy_chan
-recruit_character = LIB_benton_stukes
-recruit_character = LIB_reginald_brandon
-recruit_character = LIB_aaron_pinn
-recruit_character = LIB_john__r_fox
-recruit_character = LIB_samuel_nell
-recruit_character = LIB_joseph_smith
-recruit_character = LIB_stewart_holland
-recruit_character = LIB_benjamin_o_davis
-recruit_character = LIB_george_remond
-recruit_character = LIB_iver_virgin
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "LIB_1939"
-	set_technology = {
-		#doctrines
-		air_superiority = 1
-		
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
+recruit_character = LIB_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1931.1.1"
-	election_frequency = 96
-	elections_allowed = yes
+	ruling_party = neutrality
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
+	election_frequency = 48
+	#选举间隔（48为默认）
+	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	democratic = 100
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-create_country_leader = {
-	name = "Edwin Barclay"
-	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "GFX_portrait_lib_edwin_barclay"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
+add_ideas = {
+	LIB_test_idea
 }
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1939.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

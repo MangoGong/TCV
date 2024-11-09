@@ -1,50 +1,41 @@
-﻿capital = 619
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "SIK_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
 	infantry_weapons = 1
-	
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-recruit_character = SIK_sheng_shicai
-recruit_character = SIK_chiang_yufen
-recruit_character = SIK_kwong_jin
-recruit_character = SIK_luo_wei
-recruit_character = SIK_liang_jiang
-recruit_character = SIK_piotr_orlov
-recruit_character = SIK_kwong_tian
-recruit_character = SIK_yu_wei
-recruit_character = SIK_deng_tian
-recruit_character = SIK_xie_peng
-recruit_character = SIK_yang_tian
-recruit_character = SIK_cheng_fang
-recruit_character = SIK_ma_wei
-recruit_character = SIK_yol_bars
-recruit_character = SIK_gao_jiang
-recruit_character = SIK_mao_wu
-recruit_character = SIK_sa_zhenbing
-recruit_character = SIK_tan_ma
-recruit_character = SIK_zhang_xiliang
-recruit_character = SIK_habibullah_huseinov
-recruit_character = SIK_isa_yusuf_alptekin
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-	}
-}
+recruit_character = SIK_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
-	ruling_party = fascism
-	last_election = "1936.1.1"
+	ruling_party = neutrality
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	fascism = 100
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
+
+add_ideas = {
+	SIK_test_idea
+}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

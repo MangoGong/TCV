@@ -1,90 +1,41 @@
-﻿capital = 295
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "COG_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_mountaineers = 1
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-set_convoys = 5
+recruit_character = COG_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
-# A colony of Italy in 1939.  However, if independent it would have the same as its 1936 politics
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
+	communism = 0
+	fascism = 0
+	democratic = 0
 	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-create_country_leader = {
-	
-	name = "François Tolenga"
-	picture = GFX_portrait_Francois_Tolenga
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		compassionate_gentleman
-	}
+add_ideas = {
+	COG_test_idea
 }
-create_country_leader = {
-	
-	name = "Lumumba Lomendja"
-	picture = GFX_portrait_Lumumba_Lomendja
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		silent_workhorse
-	}
-}
-
-create_country_leader = {
-	
-	name = "David Manera"
-	picture = GFX_portrait_David_Manera
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

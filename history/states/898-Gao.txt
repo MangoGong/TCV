@@ -5,8 +5,9 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = MLI
+		add_core_of = FWA
 		
 		buildings = {
 			infrastructure = 2

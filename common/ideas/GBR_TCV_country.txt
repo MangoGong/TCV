@@ -1,0 +1,70 @@
+ideas = {
+	country = {
+		GBR_land_of_hope_and_glory = {
+			name = GBR_land_of_hope_and_glory
+			allowed = {
+				original_tag = GBR
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = 0.15
+				war_stability_factor = -0.20
+				send_volunteers_tension = 0.10
+			}
+		}
+		GBR_imperial_commonwealth = {
+			name = GBR_imperial_commonwealth
+			allowed = {
+				original_tag = GBR
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				local_resources_factor = 0.25
+				send_volunteer_size = 4
+			}
+		}
+		GBR_golden_age = {
+			name = GBR_golden_age
+			allowed = {
+				original_tag = GBR
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		GBR_queen_elizabeth_the_second = {
+			name = GBR_queen_elizabeth_the_second
+			allowed = {
+				original_tag = GBR
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.60
+			}
+		}
+		GBR_london_econ_crash = {
+			name = GBR_london_econ_crash
+			allowed = {
+				original_tag = GBR
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = -0.40
+				production_speed_buildings_factor = -0.30
+				industrial_capacity_dockyard = -0.30
+				repair_speed_factor = -0.30
+				production_factory_max_efficiency_factor = -0.50
+				consumer_goods_factor = 0.30
+			}
+		}
+	}
+}

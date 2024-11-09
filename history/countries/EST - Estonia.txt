@@ -1,255 +1,41 @@
-﻿capital = 812
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "EST_1936"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "EST_1936_air_bba"
-	else = {
-		set_air_oob = "EST_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-
-		}
-	}
-}
-
-if = {
-	limit = { has_dlc = "Arms Against Tyranny" }
-	store_core_states_on_game_start = yes
-}
-set_research_slots = 3
-
-add_ideas = {
-	limited_conscription
-}
-IF = {
-	limit = { has_dlc = "No Step Back" }
-	add_ideas = {
-		democratic_opposition
-		EST_vaps_idea_1
-	}
-}
-
-recruit_character = EST_konstantin_pats
-recruit_character = EST_artur_sirk
-recruit_character = EST_johannes_kabin
-recruit_character = EST_jaan_tonisson
-recruit_character = EST_andres_larka
-recruit_character = EST_oskar_eiriksson
-recruit_character = EST_leo_sepp
-recruit_character = EST_richard_veermaa
-recruit_character = EST_alex_nirk
-recruit_character = EST_richard_tomberg
-recruit_character = EST_alfred_vendt
-recruit_character = EST_juhan_tuuling
-recruit_character = EST_nikolay_g_karotamm
-recruit_character = EST_voldemar_mere
-recruit_character = EST_alfons_rebane
-recruit_character = EST_juri_uluots
-recruit_character = EST_boris_kumm
-recruit_character = EST_august_rei
-recruit_character = EST_jaan_anvelt
-recruit_character = EST_johan_laidoner
-
-IF = { 
-	limit = { has_dlc = "No Step Back"}
-	recruit_character = EST_august_jakobson
-	recruit_character = EST_viktor_puskar
-	recruit_character = EST_voldemar_voolman
-	recruit_character = EST_henrik_allik
-	recruit_character = EST_johan_pitka
-	recruit_character = EST_hjalmar_mae
-	recruit_character = EST_aleksander_jaakson
-	recruit_character = EST_herbert_brede
-	recruit_character = EST_otto_heinze
-}
-
-set_variable = {
-	var = vaps_days_var
-	value = 80
-}
-
-set_variable = {
-	var = vaps_crackdown_var
-	value = 360
-}
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	tech_support = 1
-	basic_train = 1
+	mass_assault = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
-}
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-set_convoys = 5
-
-1939.1.1 = {
-
-	set_country_flag = fought_vaps_flag #Estonia shouldn't have to fight the Vaps in 39
-
-	remove_ideas = {
-		democratic_opposition
-		EST_vaps_idea_1
-	}
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		complete_national_focus = EST_era_of_silence
-		complete_national_focus = EST_fight_the_vaps
-		complete_national_focus = EST_ismaaliit
-		complete_national_focus = BALTIC_rejoin_the_railways
-		complete_national_focus = BALTIC_renew_allied_trade
-		complete_national_focus = EST_establish_the_rahvuskogu
-		complete_national_focus = EST_national_council
-		complete_national_focus = EST_chamber_of_deputies
-		complete_national_focus = EST_modernize_capital
-		complete_national_focus = BALTIC_attract_workers_to_capital
-		complete_national_focus = BALTIC_modernize_industry
-		complete_national_focus = EST_exploit_the_banks
-		complete_national_focus = EST_support_independent_militaries
-		complete_national_focus = EST_republican_defence_league
-		complete_national_focus = BALTIC_ford_motors
-		complete_national_focus = BALTIC_crossley_motors
-		complete_national_focus = BALTIC_natural_resources
-	}
-	
-	oob = "EST_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "EST_1939_naval_mtg"
-		else = {
-			set_naval_oob = "EST_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "EST_1936_air_bba" #deliberately using 1936 OOB since no change in aircraft strength or models
-		else = {
-			set_air_oob = "EST_1936_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				early_bomber = 1
-				CAS1 = 1
-				naval_bomber1 = 1
-
-			}
-		}
-	}
-	set_technology = {
-		tech_recon = 1	
-		tech_engineers = 1
-		interwar_artillery = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_ship_hull_submarine = 1
-		}
-	}
-}
+recruit_character = EST_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1932.5.21"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	democratic = 20
-	fascism = 15
-	communism = 5
-	neutrality = 60
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.2.25"
-		election_frequency = 48
-		elections_allowed = no
-	}
+add_ideas = {
+	EST_test_idea
 }
-
-
-### VARIANTS ###
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Kalev Class"				
-			type = ship_hull_submarine_2
-			name_group = EST_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = ship_mine_layer_sub
-			}
-		}
-	}
-}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

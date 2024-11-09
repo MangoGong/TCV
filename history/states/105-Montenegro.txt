@@ -9,30 +9,18 @@ state={
 
 	history={
 		victory_points = {
-			9809 3 
+			11858 3 
 		}
-		victory_points = {
-			9821 1
-		}
-		owner = ITA
-		add_core_of = ITA
+		owner = MNT
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			9809 = {
-				naval_base = 1
-			}
-			9821 = {
-				naval_base = 1
-			}
 		}
-		add_core_of = YUG
-
 	}
 
 	provinces={
-		937 6913 9809 9821 11858 
+		937 6913 11858 
 	}
 	manpower=895500
 	buildings_max_level_factor=1.000

@@ -1,0 +1,52 @@
+characters={
+#角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
+	SAX_test_character={
+		name=SAX_test_character
+
+		#肖像选择（平民状态和军事状态）
+		portraits={
+
+			#平民状态
+			civilian={
+				large="gfx//leaders//general//TCV_testing_icon.dds"
+                #large="gfx//leaders//USA//国家tag_角色名称，如USA_123.dds"
+
+			}
+
+			#军事状态
+			army={
+				#large="gfx//leaders//USA//国家tag_角色名称，如USA_123.dds"
+				#small="gfx//leaders//USA//国家tag_角色名称，如USA_123.dds"
+			}
+
+		}
+		#担任党派领导人时的数据
+		country_leader={
+			#意识形态
+			ideology=despotism
+			#特质
+			traits={ }
+			#不可用日期（死亡日期）
+			expire="2000.1.1.1"
+			#我也不知道这个是什么，但最好不要碰这个
+			id=-1
+		}
+		#担任陆军将军时的数据
+		#field_marshal={
+			#特质（如堑壕大师）
+			#traits={ }
+			#等级
+			#skill=4
+			#攻击等级
+			#attack_skill=2
+			#防御等级
+			#defense_skill=4
+			#计划等级
+			#planning_skill=3
+			#后勤等级
+			#logistics_skill=4
+			#作者也不知道这个有什么用，不过能运行就不要碰
+			#legacy_id=-1
+		#}
+	}
+}

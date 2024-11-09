@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+		GER_rotefront_crisis = {
+			name = GER_rotefront_crisis
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.50
+				communism_drift = 0.10
+				drift_defence_factor = -0.20
+			}
+		}
+	}	
+	country = {
+		heinrich_himmler = {
+			name = heinrich_himmler
+			allowed = {
+				original_tag = GER
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+			}
+		}
+	}
+}

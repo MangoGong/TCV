@@ -1,91 +1,41 @@
-﻿capital = 293
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "YEM_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
+	mass_assault = 1
 }
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-recruit_character = YEM_imam_yahya
-recruit_character = YEM_chandler_ibn_khalid
-recruit_character = YEM_mustafa_ibn_umar
-recruit_character = YEM_fuad_ibn_yusuf
-recruit_character = YEM_ja_far_al_hijazi
-recruit_character = YEM_hisham_ibn_salim
-recruit_character = YEM_abd_al_husseini
-recruit_character = YEM_sa_ud_ibn_umar
-recruit_character = YEM_ahmad_bin_yaha
-recruit_character = YEM_ahmad_al_hamid
-recruit_character = YEM_mansur_al_badr
-recruit_character = YEM_burkan_salem
-recruit_character = YEM_hisham_ibn_uthman
-recruit_character = YEM_khalid_ibn_yusuf
-recruit_character = YEM_ali_halukeh
-recruit_character = YEM_jabir_khaldun
-recruit_character = YEM_yusuf_ibn_khalid
-recruit_character = YEM_fuad_ibn_falil
-recruit_character = YEM_cecil_barrington_hurst
-recruit_character = YEM_nae_m_al_abdul
-
-
-set_war_support = 0.1
-set_stability = 0.8
-set_convoys = 5
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "YEM_1939"
-	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
+recruit_character = YEM_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
+	communism = 0
+	fascism = 0
+	democratic = 0
 	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
+add_ideas = {
+	YEM_test_idea
+}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

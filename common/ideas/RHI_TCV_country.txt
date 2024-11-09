@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		RHI_ai_computer_Athena = {
+			name = RHI_ai_computer_Athena
+			allowed = {
+				original_tag = RHI
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				research_speed_factor = 0.25
+			}
+		}
+		RHI_french_slave = {
+			name = RHI_french_slave
+			allowed = {
+				original_tag = RHI
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			#modifier = {
+				
+			#}
+		}
+	}
+}

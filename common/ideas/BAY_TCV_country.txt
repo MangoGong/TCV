@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		BAY_night_city_of_europe = {
+			name = BAY_night_city_of_europe
+			allowed = {
+				original_tag = BAY
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.5
+			}
+		}
+	}
+}

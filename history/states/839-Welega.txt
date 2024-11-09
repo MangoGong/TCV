@@ -32,10 +32,8 @@ state = {
 			13243 1 
 		}
 		
-		owner = ETH
+		owner = ITA
 		add_core_of = ETH
-		add_core_of = BEG
-		add_core_of = ORO
 
 		1936.6.1 = {
 			owner = ITA

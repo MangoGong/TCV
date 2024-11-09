@@ -1,0 +1,131 @@
+ideas = {
+	country = {
+		FRA_brink_of_civil_war = {
+			name = FRA_brink_of_civil_war
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = -0.40
+				political_power_gain = -1
+				recruitable_population_factor = -0.05
+			}
+		}
+		FRA_EuroCom_status_fragile = {
+			name = FRA_EuroCom_status_fragile
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				political_power_factor = -0.2
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				recruitable_population_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		FRA_EuroCom_status_cooperating = {
+			name = FRA_EuroCom_status_cooperating
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				political_power_factor = -0.15
+				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.10
+				recruitable_population_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		FRA_EuroCom_status_tight = {
+			name = FRA_EuroCom_status_tight
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				political_power_factor = -0.10
+				research_speed_factor = 0.15
+				industrial_capacity_factory = 0.10
+				recruitable_population_factor = 0.10
+				consumer_goods_factor = -0.10
+			}
+		}
+		FRA_EuroCom_status_united = {
+			name = FRA_EuroCom_status_united
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				political_power_factor = -0.05
+				research_speed_factor = 0.15
+				industrial_capacity_factory = 0.15
+				recruitable_population_factor = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		FRA_EuroCom_status_EU = {
+			name = FRA_EuroCom_status_EU
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				political_power_factor = 0.05
+				research_speed_factor = 0.20
+				industrial_capacity_factory = 0.20
+				recruitable_population_factor = 0.20
+				consumer_goods_factor = -0.15
+			}
+		}
+		FRA_looming_red_menace = {
+			name = FRA_looming_red_menace
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				communism_drift = -0.10
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		FRA_army_stressed_out = {
+			name = FRA_army_stressed_out
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				recruitable_population_factor = -0.30
+				training_time_army_factor = 0.30
+			}
+		}
+		FRA_bandit_threat_imminiment = {
+			name = FRA_bandit_threat_imminiment
+			allowed = {
+				original_tag = FRA
+			}
+			removal_cost = -1
+			picture = TCV_testingicon_ideas
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+	}
+}

@@ -9,6 +9,14 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = FER_Yamada_Otozo
+
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
+
+
 set_popularities = {
 	democratic = 00
 	fascism = 100

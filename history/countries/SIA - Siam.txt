@@ -1,259 +1,41 @@
-﻿capital = 289
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "SIA_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SIA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SIA_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SIA_1936_air_bba"
-	else = {
-		set_air_oob = "SIA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
-}
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-recruit_character = SIA_phraya_phahon
-recruit_character = SIA_nangklao_chichalerm
-recruit_character = SIA_chao_phonphayuhasena
-recruit_character = SIA_nangklao_suriyawongse
-recruit_character = SIA_tianliang_huntrakool
-recruit_character = SIA_phra_silpasakrakorn
-recruit_character = SIA_luang_sinthusongkhramchai
-recruit_character = SIA_thawon_thamrongnawasawat
-recruit_character = SIA_phraya_preechacholayudha
-recruit_character = SIA_pridi_phanomyong
-recruit_character = SIA_sindhu_kamalanavin
-recruit_character = SIA_phraya_chitnasongkhla
-recruit_character = SIA_phraya_thayarnpikart
-recruit_character = SIA_phra_vechayanrangsarit
-recruit_character = SIA_manphya_khanphialong
-recruit_character = SIA_luang_phibunsongkhram
-recruit_character = SIA_phraya_wichcitcholathai
-recruit_character = SIA_sawat_phutianands
-recruit_character = SIA_phraya_chalermarkiart
-recruit_character = SIA_kuang_abhayavongsa
-recruit_character = SIA_thawee_punyaketu
-recruit_character = SIA_phot_bhahalyodin
-
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gw_artillery = 1
-	interwar_antiair = 1
+	mass_assault = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		early_ship_hull_light = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-	}
-}
-set_convoys = 15
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "SIA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SIA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SIA_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "SIA_1939_air_bba"
-		else = {
-			set_air_oob = "SIA_1939_air_legacy"
-			set_technology = {
-				early_bomber = 1
-			}
-		}
-	}
-
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		interwar_artillery = 1
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			gwtank = 1
-		}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_heavy_cruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			early_ship_hull_submarine = 1
-			basic_ship_hull_submarine = 1
-			early_ship_hull_cruiser = 1
-			basic_medium_battery = 1
-		}
-	}
-}
-
+recruit_character = SIA_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
+	#选举间隔（48为默认）
 	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	fascism = 20
-	neutrality = 80
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		fascism = 100
-	}
-
-	recruit_character = SIA_plaek_phibunsongkhram
-	promote_character = SIA_plaek_phibunsongkhram
-	retire_character = SIA_nangklao_suriyawongse
+add_ideas = {
+	SIA_test_idea
 }
-
-### VARIANTS ###
-# 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Phra Ruang Class"				
-		type = ship_hull_light_1
-		name_group = SIA_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Vilun Class"				
-			type = ship_hull_submarine_1
-			name_group = SIA_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_torpedo_sub_1
-			}
-		}
-		# Cruisers #
-		create_equipment_variant = {
-			name = "Sri Ayuthia Class"
-			type = ship_hull_cruiser_coastal_defense_ship
-			name_group = SIA_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_armor_slot = empty
-				mid_1_custom_slot = empty
-				mid_2_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-		}
-	}
-}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

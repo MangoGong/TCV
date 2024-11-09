@@ -1,0 +1,59 @@
+ideas = {
+
+	country = {
+
+		RGG_alliance_not_necessary = {
+
+			name = RGG_alliance_not_necessary
+
+			picture = TCV_testingicon_ideas
+			allowed = { original_tag = RGG }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.15
+			}
+		}
+
+		RGG_aftermath_of_first_crisis_distrust = {
+
+			name = RGG_aftermath_of_first_crisis_distrust
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = RGG }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.50
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_buildings_factor = -0.50
+				consumer_goods_factor = +0.70
+				industrial_capacity_factory = -0.40
+				stability_weekly = +0.01
+				production_factory_max_efficiency_factor = -0.50
+			}
+		}
+
+		RGG_gendarmerie_and_police = {
+
+			name = RGG_confused_target
+
+			picture = TCV_testingicon_ideas
+
+			allowed = { original_tag = RGG }
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.30
+				stability_factor = -0.10
+				stability_weekly = -0.005
+				experience_gain_army = -0.30
+			}
+		}
+	}
+}

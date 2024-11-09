@@ -1,7 +1,7 @@
 
 state={
 	id=549
-	name="STATE_549" #Kurdufan / was "Sudan"
+	name="STATE_549" #Kurdufan / was "EGYan"
 	
 	manpower = 1802132
 
@@ -9,8 +9,8 @@ state={
 		victory_points = {
 			2096 1 
 		}
-		owner = ENG
-		add_core_of = SUD
+		owner = EGY
+		add_core_of = EGY
 		buildings = {
 			infrastructure = 2
 

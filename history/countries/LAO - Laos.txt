@@ -1,138 +1,41 @@
-﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "LAO_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-set_research_slots = 3
-
-# Starting tech
-# clone of France
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_recon = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-		naval_bomber1 = 1
-		cv_early_fighter = 1
-		cv_naval_bomber1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
-		CAS1 = 1
-		
-	}
-}
+recruit_character = LAO_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-	}
+set_politics = {
+	ruling_party = neutrality
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
+	election_frequency = 48
+	#选举间隔（48为默认）
+	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-	}
-}
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
-}
-
 set_popularities = {
-	democratic = 25
-	communism = 35
-	neutrality = 40
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-create_country_leader = {
-	name = "Souphanouvong"
-	desc = ""
-	picture = GFX_portrait_Souphanouvong
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
+add_ideas = {
+	LAO_test_idea
 }
-
-create_country_leader = {
-	name = "Sisavang Vong"
-	desc = ""
-	picture = GFX_portrait_Sisavang_Vong
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Kou Voragong" 
-	desc = ""
-	picture = GFX_portrait_Kou_Voragong
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-#couldnt find historical fascists
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

@@ -1,109 +1,41 @@
-﻿capital = 304
+#capital = 
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob = "PAN_1936"
+#oob =
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_trucks = 1
+	mass_assault = 1
 }
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
 
-recruit_character = PAN_harmodio_arias_madrid
-recruit_character = PAN_bartolomé_sinibaldi
-recruit_character = PAN_tiburcio_andino
-recruit_character = PAN_aniceto_andino
-recruit_character = PAN_enrique_jimenez_brin
-recruit_character = PAN_nestor_urribe_suarez
-recruit_character = PAN_carlos_zavala
-recruit_character = PAN_marcos_a_gelabert
-recruit_character = PAN_juan_jose_parada
-recruit_character = PAN_arturo_osborne_irraga
-recruit_character = PAN_enrico_fabrego_paz
-recruit_character = PAN_ferdinando_hernandez_ytuarte
-recruit_character = PAN_margarita_belloso_jimenez
-recruit_character = PAN_omar_torrijos
-recruit_character = PAN_bolivar_villarino
-recruit_character = PAN_juan_a_hernandez
-recruit_character = PAN_juan_remon
-recruit_character = PAN_manuel_rios_urribe
-recruit_character = PAN_victor_pareja
-recruit_character = PAN_nicolas_ardito_barletta
-recruit_character = PAN_jose_pezet
-
-
-set_country_flag = monroe_doctrine
-set_war_support = 0.1
-set_convoys = 10
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "PAN_1939"
-	set_technology = {
-		infantry_weapons1 = 1
-
-		#doctrines
-		air_superiority = 1
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1		
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		fleet_in_being = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
+recruit_character = PAN_test_character
+#获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1932.6.5"
+	ruling_party = neutrality
+	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+	last_election = 1936.1.1
+	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
-	elections_allowed = yes
+	#选举间隔（48为默认）
+	elections_allowed = no
+	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	democratic = 100
+	communism = 0
+	fascism = 0
+	democratic = 0
+	neutrality = 100
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.6.7"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	recruit_character = PAN_juan_demostenes_arosemena
-	promote_character = PAN_juan_demostenes_arosemena
-	recruit_character = PAN_july_portocarrero
-	promote_character = PAN_july_portocarrero
-	retire_character = PAN_harmodio_arias_madrid
-	retire_character = PAN_bartolomé_sinibaldi
+add_ideas = {
+	PAN_test_idea
 }
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

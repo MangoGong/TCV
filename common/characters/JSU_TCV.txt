@@ -1,0 +1,27 @@
+characters={
+	#角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
+			JSU_Li_shi_qun={
+				name=JSU_Li_shi_qun
+		
+				#肖像选择（平民状态和军事状态）
+				portraits={
+		
+					#平民状态
+					civilian={
+						large="gfx//leaders//general//TCV_testing_icon.dds"
+					}
+		
+				}
+				#担任党派领导人时的数据
+				country_leader={
+					#意识形态
+					ideology=fascism_ideology
+					#特质
+					#traits={ }
+					#不可用日期（死亡日期）
+					#expire="1965.1.1.1"
+					#我也不知道这个是什么，但最好不要碰这个
+					id=-1
+				}
+			}
+		}
